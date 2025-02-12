@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    width: 100%;
+    background: #e4e4e4;
+    color: #000;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column; /* Ensures h2 and p stack vertically */
+    align-items: center; /* Centers text horizontally */
+    justify-content: center; /* Centers content vertically */
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Default text color */
+    min-height: 300px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.grid-container a {
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.grid-item:hover {
+    background-color: royalblue; /* New background color on hover */
+    color: white; /* Change text color */
+}
+
